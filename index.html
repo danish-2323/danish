@@ -12,7 +12,7 @@
 <meta name="theme-color" content="#0a0a0a">
 <link rel="canonical" href="https://danish-2323.github.io/danish/">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Danish M","url":"https://danish-2323.github.io/danish/","email":"danishmoosashameem@gmail.com","telephone":"+919940768187","jobTitle":"AI & Data Science Engineer","alumniOf":{"@type":"CollegeOrUniversity","name":"Sri Krishna College of Technology"},"sameAs":["https://www.linkedin.com/in/danishm23","https://github.com/Danish2323"]}
+{"@context":"https://schema.org","@type":"Person","name":"Danish M","url":"https://danish-2323.github.io/danish/","email":"danishmoosashameem@gmail.com","telephone":"+919940768187","jobTitle":"AI & Data Science Engineer","alumniOf":{"@type":"CollegeOrUniversity","name":"Sri Krishna College of Technology"},"sameAs":["https://www.linkedin.com/in/danishm23","https://github.com/danish-2323"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -411,11 +411,95 @@ footer{background:var(--black);padding:22px 64px;border-top:1px solid var(--line
   footer{flex-direction:column;gap:12px;}
 }
 @media(max-width:580px){
-  .sk-grid,.cert-grid{grid-template-columns:1fr;}
-  .edu-row{grid-template-columns:1fr;gap:4px;}
-  .contact-meta{grid-template-columns:1fr 1fr;}
-  .h-nums{grid-template-columns:1fr 1fr;}
-  .as-row{grid-template-columns:1fr;}
+  body{cursor:auto;}
+  #cur,#cur-trail{display:none;}
+
+  /* Nav */
+  nav{padding:16px 20px;}
+  nav.scrolled{padding:14px 20px;}
+  .n-logo{font-size:1.1rem;}
+
+  /* Strip */
+  .strip{padding:8px 20px;flex-direction:column;gap:4px;align-items:flex-start;}
+  .strip-left,.strip-right{font-size:.52rem;letter-spacing:.1em;}
+
+  /* Hero */
+  #hero{grid-template-columns:1fr;min-height:100svh;}
+  .h-left{padding:90px 20px 48px;}
+  .h-name{font-size:clamp(3.8rem,14vw,5.5rem);}
+  .h-rule{margin:24px 0;}
+  .h-sub{font-size:.9rem;line-height:1.75;max-width:100%;}
+  .h-role{font-size:.68rem;}
+  .h-actions{flex-direction:column;gap:10px;margin-top:28px;}
+  .btn-a,.btn-b{width:100%;text-align:center;justify-content:center;padding:14px 20px;}
+  .h-nums{margin-top:36px;padding-top:24px;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .hnum-val{font-size:2rem;}
+  .hnum-label{font-size:.58rem;}
+  .h-right{height:52vw;min-height:240px;}
+  .h-scroll{left:20px;bottom:20px;}
+
+  /* Sections */
+  section{padding:64px 20px;}
+  #contact{padding:80px 20px;}
+  .s-title{font-size:clamp(2.2rem,9vw,3.5rem);}
+
+  /* About */
+  .about-layout{grid-template-columns:1fr;gap:36px;}
+  .about-body p{font-size:.9rem;line-height:1.8;}
+  .about-pull{font-size:1.25rem;padding-left:16px;}
+  .intern-block{padding:16px 18px;flex-wrap:wrap;gap:12px;}
+  .as-row{grid-template-columns:1fr 1fr;}
+  .astat{padding:18px 16px;}
+  .astat-v{font-size:2.2rem;}
+
+  /* Skills */
+  .sk-grid{grid-template-columns:1fr;gap:2px;}
+  .sk-col{padding:22px 20px;}
+
+  /* Projects */
+  .proj{grid-template-columns:1fr;grid-template-rows:auto;gap:8px;padding:24px 0;}
+  .proj::before{left:-20px;right:-20px;}
+  .p-num{padding-top:0;font-size:.55rem;}
+  .p-name{font-size:1.4rem;}
+  .p-desc{font-size:.85rem;line-height:1.75;max-width:100%;}
+  .p-action{grid-column:1;margin-top:8px;justify-self:start;}
+  .p-chips{gap:5px;}
+  .pc{font-size:.5rem;padding:3px 7px;}
+
+  /* Education */
+  .edu-list{margin-top:40px;}
+  .edu-row{grid-template-columns:1fr;gap:4px;padding:22px 0;}
+  .edu-row:hover{background:transparent;padding-left:0;}
+  .edu-date{font-size:.58rem;padding-top:0;}
+  .edu-school{font-size:1.1rem;}
+  .edu-deg{font-size:.75rem;}
+
+  /* Certifications */
+  .cert-grid{grid-template-columns:1fr 1fr;gap:2px;margin-top:40px;}
+  .cert{padding:18px 14px;}
+  .cert-name{font-size:.92rem;}
+  .cert-org{font-size:.65rem;}
+  .cert-issuer{font-size:.5rem;}
+
+  /* Contact */
+  #contact .s-title{font-size:clamp(2rem,8vw,3rem);}
+  .contact-email{font-size:clamp(.85rem,3.5vw,1.1rem);gap:10px;word-break:break-all;padding-bottom:10px;margin-top:32px;}
+  .contact-email svg{width:18px;height:18px;flex-shrink:0;}
+  .contact-links{gap:8px;margin-top:28px;}
+  .c-btn{padding:9px 14px;font-size:.6rem;gap:6px;}
+  .c-btn svg{width:11px;}
+  .contact-meta{margin-top:40px;padding-top:28px;grid-template-columns:1fr 1fr;gap:16px;}
+  .cm-v{font-size:.75rem;}
+  .cm-k{font-size:.48rem;}
+
+  /* Footer */
+  footer{padding:16px 20px;flex-direction:column;gap:10px;text-align:center;}
+
+  /* Mob menu links */
+  .mob a{font-size:2.4rem;}
+
+  /* Back to top */
+  #btt{bottom:20px;right:20px;width:38px;height:38px;}
 }
 </style>
 </head>
@@ -595,7 +679,7 @@ footer{background:var(--black);padding:22px 64px;border-top:1px solid var(--line
         <p class="p-desc">Real-time emotion detection for students using DeepFace/ArcFace and voice emotion engine via librosa. Generates PDF reports, tracks engagement trends, surfaces insights for educators.</p>
         <div class="p-chips"><span class="pc">Python</span><span class="pc">OpenCV</span><span class="pc">DeepFace</span><span class="pc">FastAPI</span><span class="pc">Streamlit</span><span class="pc">librosa</span></div>
       </div>
-      <div class="p-action"><a href="https://github.com/Danish2323" target="_blank" class="p-link">GitHub ↗</a></div>
+      <div class="p-action"><a href="https://github.com/danish-2323" target="_blank" class="p-link">GitHub ↗</a></div>
     </div>
 
     <div class="proj">
@@ -609,7 +693,7 @@ footer{background:var(--black);padding:22px 64px;border-top:1px solid var(--line
         </div>
         <div class="p-chips"><span class="pc">React</span><span class="pc">Vite</span><span class="pc">FastAPI</span><span class="pc">Firebase</span><span class="pc">Tailwind</span><span class="pc">Python</span></div>
       </div>
-      <div class="p-action"><a href="https://github.com/Danish2323" target="_blank" class="p-link">Follow ↗</a></div>
+      <div class="p-action"><a href="https://github.com/danish-2323" target="_blank" class="p-link">Follow ↗</a></div>
     </div>
 
     <div class="proj">
@@ -619,7 +703,7 @@ footer{background:var(--black);padding:22px 64px;border-top:1px solid var(--line
         <p class="p-desc">Emergency services finder built for IIT Madras Road Safety Hackathon 2026. React Native frontend, Flask backend with OpenStreetMap/Overpass API, real hospital &amp; police datasets across India.</p>
         <div class="p-chips"><span class="pc">React Native</span><span class="pc">Flask</span><span class="pc">OpenStreetMap</span><span class="pc">Python</span></div>
       </div>
-      <div class="p-action"><a href="https://github.com/Danish2323" target="_blank" class="p-link">GitHub ↗</a></div>
+      <div class="p-action"><a href="https://github.com/danish-2323" target="_blank" class="p-link">GitHub ↗</a></div>
     </div>
 
     <div class="proj">
@@ -629,7 +713,7 @@ footer{background:var(--black);padding:22px 64px;border-top:1px solid var(--line
         <p class="p-desc">End-to-end AI automation for placement readiness. Mock interviews with real-time feedback, auto-graded DSA practice, resume parsing, company-specific roadmaps, and performance dashboards.</p>
         <div class="p-chips"><span class="pc">Python</span><span class="pc">LangChain</span><span class="pc">NLP</span><span class="pc">FastAPI</span><span class="pc">React</span><span class="pc">AI Agents</span></div>
       </div>
-      <div class="p-action"><a href="https://github.com/Danish2323" target="_blank" class="p-link">Follow ↗</a></div>
+      <div class="p-action"><a href="https://github.com/danish-2323" target="_blank" class="p-link">Follow ↗</a></div>
     </div>
 
     <div class="proj">
@@ -685,7 +769,7 @@ footer{background:var(--black);padding:22px 64px;border-top:1px solid var(--line
   <div class="contact-links">
     <a href="mailto:danishmoosashameem@gmail.com" class="c-btn"><svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>Gmail</a>
     <a href="https://www.linkedin.com/in/danishm23" target="_blank" class="c-btn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
-    <a href="https://github.com/Danish2323" target="_blank" class="c-btn"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>GitHub</a>
+    <a href="https://github.com/danish-2323" target="_blank" class="c-btn"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>GitHub</a>
     <a href="tel:+919940768187" class="c-btn"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.08 1.18 2 2 0 012.07 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.41-.41a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>+91 99407 68187</a>
   </div>
   <div class="contact-meta">
@@ -700,7 +784,7 @@ footer{background:var(--black);padding:22px 64px;border-top:1px solid var(--line
   <div class="f-copy">&copy; 2025 Danish M. All rights reserved.</div>
   <div class="f-links">
     <a href="https://www.linkedin.com/in/danishm23" target="_blank"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
-    <a href="https://github.com/Danish2323" target="_blank"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
+    <a href="https://github.com/danish-2323" target="_blank"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
     <a href="mailto:danishmoosashameem@gmail.com"><svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></a>
   </div>
 </footer>
