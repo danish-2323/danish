@@ -431,7 +431,7 @@ footer{background:var(--black);padding:22px 64px;border-top:1px solid var(--line
   }
   .strip-left,.strip-right{font-size:.5rem;letter-spacing:.09em;}
 
-  /* Hero — stacked: text on top, photo below */
+  /* Hero — stacked: photo first, text below */
   #hero{
     grid-template-columns:1fr;
     grid-template-rows:auto auto;
@@ -439,24 +439,24 @@ footer{background:var(--black);padding:22px 64px;border-top:1px solid var(--line
   }
   .h-left{
     padding:36px 20px 40px;
-    order:1;
+    order:2;
   }
   /* Photo — full width, tall enough to look good */
   .h-right{
-    order:2;
-    height:72vw;
-    min-height:280px;
-    max-height:380px;
+    order:1;
+    height:88vw;
+    min-height:320px;
+    max-height:460px;
     position:relative;
     opacity:1 !important;
   }
-  /* Remove left-to-right fade on mobile, keep bottom vignette only */
+  /* Remove left-to-right fade on mobile, keep subtle bottom vignette only */
   .h-photo-wrap::before{
-    background:linear-gradient(to bottom, transparent 60%, rgba(10,10,10,0.5) 100%);
+    background:linear-gradient(to bottom, transparent 70%, rgba(10,10,10,0.6) 100%);
   }
   .h-photo-wrap img{
-    object-position:center 20%;
-    filter:grayscale(100%) contrast(1.1) brightness(0.95);
+    object-position:center 15%;
+    filter:grayscale(100%) contrast(1.08) brightness(1.0);
   }
   .h-vert{display:none;}
   .h-photo-meta{bottom:14px;right:14px;}
